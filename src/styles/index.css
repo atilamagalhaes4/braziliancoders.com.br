@@ -1,0 +1,175 @@
+header {
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url("../assets/img/background-top-image.jpeg");
+    min-height: 50rem;
+}
+
+body {
+    background-color: #011627;
+}
+
+#logo-blank {
+    height: 3.125rem;
+    margin-top: 2.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 6.25rem;
+    align-items: center;
+    width: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    outline: none;
+}
+
+input.nosubmit {
+    width: 16.25rem;
+    border: 0.063rem solid #FFF;
+    display: block;
+    border-radius: 0.625rem;
+    color: #FFF;
+    padding: 0.563rem 0.25rem 0.563rem 2.5rem;
+    height: 3.125rem;
+    background: transparent url("../assets/svg/icons8-search.svg") no-repeat 0.625rem center;
+}
+
+.separarSearchComMenu {
+    display: flex;
+    justify-content: space-around;
+    height: 6.25rem;
+    align-items: center;
+}
+
+.buttonMenu {
+    border-radius: 3rem;
+    background: #00C9E0;
+    color: #FFF;
+    width: 10.438rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    border: none;
+    margin-left: 1.25rem;
+    margin-right: -1.25rem;
+}
+
+.bannerPrincipal {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.bannerPrincipal h1 {
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFF;
+}
+
+
+.bannerPrincipal h6 {
+    padding: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #FFF;
+}
+
+.bannerPrincipal p {
+    padding: 25px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    color: #FFF;
+    width: 40%;
+    margin: auto;
+    height: auto;
+}
+
+
+.bannner-bottom-detail {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bannner-bottom-detail img {
+    height: 12px;
+}
+
+
+
+
+.detalheBanner hr {
+    width: 2px;
+    height: 20px;
+    border-radius: 13px;
+    background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+    border: none;
+    bottom: 0;
+}
+
+.detalheBanner p {
+    transform: rotate(-90deg);
+    font-weight: 700;
+    font-size: 8px;
+    color: #FFF;
+    border-bottom:  solid 1px #00C9E0;
+}
+
+.detalheBanner {
+    margin-left: -20px;
+}
+
+.logo-redesSociais {
+    display: flex;
+    justify-content: space-around;
+    height: 6.25rem;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -20px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    #logo-blank {
+        height: 1.875rem;
+        margin-top: 0.5%;
+    }
+
+    .buttonMenu {
+        display: none;
+    }
+
+    input.nosubmit {
+        width: 9.375rem;
+        border: 0.063rem solid #FFF;
+        display: block;
+        border-radius: 0.625rem;
+        color: #FFF;
+        padding: 0.563rem 0.25rem 0.563rem 2.5rem;
+        height: 3.125rem;
+        background: transparent url("../assets/svg/search.svg") no-repeat 0.625rem center;
+    }
+
+    .bannerPrincipal h1 {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        color: #FFF;
+    }
+}

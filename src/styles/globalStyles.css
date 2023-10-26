@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+body {
+    font-family: "Inter";
+}
+
+:root {
+    --brand-1: #4C6EF5;
+    --brand-2: #364FC7;
+
+    --gray-1: #191C1F;
+    --gray-2: #212529;
+    --gray-3: #343A40;
+    --gray-4: #ADB5BD;
+    --gray-5: #CED4DA;
+    --gray-6: #EDF2FF;
+    --gray-7: #F8F9FA;
+
+}
+
+.title1 {
+    font-weight: 600;
+    font-size: 34.84px;
+    line-height: 140%;
+}
+
+.title2 {
+    font-weight: 600;
+    font-size: 26.8px;
+    line-height: 160%;
+}
+
+.title3 {
+    font-weight: 600;
+    font-size: 21.44px;
+    line-height: 160%;
+}
+
+.text1 {
+    font-weight: 400;
+    font-size: 13.4px;
+    line-height: 150%;
+}
+
+.text2 {
+    font-weight: 400;
+    font-size: 12.06px;
+    line-height: 150%;
+}
+
+.text3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.text4 {
+    font-weight: 600;
+    font-size: 10.72px;
+    line-height: 150%;
+}
