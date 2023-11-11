@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazilian Coders - Home</title>
     <link rel="website icon" href="./src/assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="./src/js/index.js" defer></script>
     <!-- AOS@2.3.4 -->
@@ -25,7 +26,9 @@
     <header>
         <nav>
             <li>
-                <img id="logo-blank" src="./src/assets/svg/logo-blank.svg" alt="logo.png">
+                <a href="./">
+                    <img id="logo-blank" src="./src/assets/svg/logo.svg" alt="logo.png">
+                </a>
             </li>
             <li class="separarSearchComMenu">
                 <form id="formSearch" class="nosubmit">
@@ -57,14 +60,14 @@
 
                 <div class="detalheBanner">
                     <p>
-                        SIGA-NOS
+                        CNPJ: 46.697.706/0001-55
                     </p>
                 </div>
                 <div class="logo-redesSociais">
-                    <a target="_blank" href="https://twitter.com/">
+                    <a target="_blank" href="https://twitter.com/braziliancoders">
                         <img src="./src/assets/svg/twitter.svg" alt="Twitter">
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/">
+                    <a target="_blank" href="https://www.instagram.com/braziliancoders/">
                         <img src="./src/assets/svg/instagram.svg" alt="Instagram">
                     </a>
                     <a target="_blank" href="https://www.facebook.com/">
@@ -73,7 +76,160 @@
                 </div>
             </article>
         </section>
+        <p class="degrade"></p>
+        <div class="subHeader">
+            <p>
+                Explore Nossos Serviços
+            </p>
+            <img src="./src/assets/svg/x.svg" alt="">
+            <label>
+                Estas são apenas categorias iniciais para ajudá-lo a começar. Não se preocupe, você pode mudar sua
+                escolha mais tarde. Escolha a que mais se aproxima do que você precisa agora e nós vamos guiá-lo ao
+                longo do caminho."
+            </label>
+        </div>
     </header>
+
+    <main>
+        <section>
+            <article class="servicos-menu__Article">
+                <nav class="servicos-menu__Nav">
+                    <li id="site-servicos_Li">
+                        Criação de sites
+                    </li>
+                    <li id="apps-servicos_Li">
+                        Criação de aplicativos
+                    </li>
+                    <li id="ecommerce-servicos_Li">
+                        Ecommerce
+                    </li>
+                    <li id="outros-servicos_Li">
+                        Outros
+                    </li>
+                </nav>
+            </article>
+
+            <article id="criacao-sites-banner">
+                <div id="criacao-sites-imagens" class="animate__animated">
+                    <img id="botao-voltar" class="botao-voltar" onclick="mudarFoto(-1)"
+                        src="./src/assets/svg/arrow-back.svg" alt="proxima imagem">
+                    <img class="botao-avancar" id="botao-proximo" onclick="mudarFoto(1)"
+                        src="./src/assets/svg/arrow-next.svg" alt="voltar imagem">
+                    <img class="imagens" id="imagem-site-principal" src="" alt="Fotos relacionada a criação de sites">
+                </div>
+                <img class="moldura" src="./src/assets/svg/moldura-l.svg" alt="">
+                <div class="criacao-sites-texto">
+                    <h2>
+                        Criação de sites
+                    </h2>
+                    <p>
+                        <br>
+                        &nbsp;💻 Transforme sua presença online conosco! Oferecemos serviços de criação de sites
+                        personalizados, com destaque para design responsivo e funcionalidades avançadas. Seja visto e
+                        atraia seu público com otimização para motores de busca (SEO) e uma gestão de conteúdo
+                        simplificada.
+                        <br> <br>
+                        &nbsp;🚀 Vamos além de simples sites; focamos em experiências do usuário aprimoradas. Cada
+                        projeto é
+                        único, e estamos prontos para colaborar, entender suas metas e criar uma presença online
+                        excepcional para impulsionar o sucesso da sua empresa.
+                    </p>
+                    <br><br>
+                    <a href="seu-link-de-contato" target="_blank" id="botao-contato">Entrar em contato</a>
+                </div>
+            </article>
+
+            <article id="criacao-aplicativo-banner">
+                <img class="moldura" src="./src/assets/svg/moldura-l.svg" alt="">
+                <div class="criacao-aplicativo-texto">
+                    <h2>
+                        Aplicativos mobile
+                    </h2>
+                    <p>
+                        <br>
+                        &nbsp;📱 Desenvolvemos soluções digitais sob medida para levar sua visão para o mundo dos
+                        aplicativos móveis! Transforme suas ideias em realidade com nossos serviços de criação de
+                        aplicativos inovadores e personalizados.
+                        <br> <br>
+                        &nbsp;🔧 Além da criação, oferecemos suporte contínuo e atualizações para garantir que seu
+                        aplicativo permaneça relevante e eficiente. Vamos juntos transformar suas ideias em aplicativos
+                        de sucesso!
+
+                    </p>
+                    <br><br>
+                    <a href="seu-link-de-contato" target="_blank" id="botao-contato">Entrar em contato</a>
+                </div>
+                <div id="criacao-aplicativo-imagens" class="animate__animated">
+                    <img id="botao-voltar" class="botao-voltar" onclick="mudarFoto2(-1)"
+                        src="./src/assets/svg/arrow-back.svg" alt="proxima imagem">
+                    <img class="botao-avancar" id="botao-proximo" onclick="mudarFoto2(1)"
+                        src="./src/assets/svg/arrow-next.svg" alt="voltar imagem">
+                    <img class="imagens" id="imagem-aplicativo-principal" src=""
+                        alt="Fotos relacionada a criação de aplicativo">
+                </div>
+            </article>
+
+
+            <article id="criacao-ecommerce-banner">
+                <div id="criacao-ecommerce-imagens"  class="animate__animated">
+                    <img class="botao-avancar" id="botao-voltar" onclick="mudarFoto3(-1)"
+                        src="./src/assets/svg/arrow-next.svg" alt="imagem anterior">
+                    <img class="botao-voltar" id="botao-proximo" onclick="mudarFoto3(1)"
+                        src="./src/assets/svg/arrow-back.svg" alt="proxima imagem">
+                    <img class="imagens" id="imagem-ecommerce-principal" src=""
+                        alt="Fotos relacionada a criação de ecommerce">
+                </div>
+                <img class="moldura" src="./src/assets/svg/moldura-l.svg" alt="">
+                <div class="criacao-sites-texto">
+                    <h2>
+                        Criação de Ecommerce's
+                    </h2>
+                    <p>
+                        <br>
+                        &nbsp;🌐 Independentemente do tamanho do seu negócio, nossas soluções escaláveis são projetadas
+                        para impulsionar suas vendas online. Estamos comprometidos em fornecer uma plataforma de
+                        e-commerce que não apenas atenda, mas exceda suas expectativas.
+                        <br> <br>
+                        &nbsp;⚙️ Além da criação, oferecemos suporte contínuo para garantir que sua loja virtual esteja
+                        sempre atualizada e pronta para enfrentar os desafios do mercado online. Vamos construir juntos
+                        o futuro do seu e-commerce!
+                    </p>
+                    <br><br>
+                    <a href="seu-link-de-contato" target="_blank" id="botao-contato">Entrar em contato</a>
+                </div>
+            </article>
+            <article id="criacao-outros-banner">
+                <img class="moldura" src="./src/assets/svg/moldura-l.svg" alt="">
+                <div class="criacao-outros-texto">
+                    <h2>
+                        Manutenção de sistemas
+                    </h2>
+                    <p>
+                        <br>
+                        &nbsp;🛠️ Vai além de websites e aplicativos! Somos seus parceiros para o desenvolvimento de
+                        sistemas personalizados e manutenção de código. Nossa equipe técnica cria soluções adaptadas às
+                        necessidades exclusivas do seu negócio, garantindo que seu código esteja sempre otimizado.
+                        <br> <br>
+                        &nbsp;💼 Colaboramos com empresas de todos os tamanhos, oferecendo suporte técnico contínuo,
+                        atualizações e aprimoramentos de código. Seja na concepção ou na manutenção, estamos
+                        comprometidos em ser sua equipe confiável de desenvolvimento e suporte.
+                    </p>
+                    <br><br>
+                    <a href="seu-link-de-contato" target="_blank" id="botao-contato">Entrar
+                        em contato</a>
+                </div>
+                <div  class="animate__animated" id="criacao-outros-imagens">
+                    <img id="botao-voltar" class="botao-voltar" onclick="mudarFoto4(-1)"
+                        src="./src/assets/svg/arrow-back.svg" alt="proxima imagem">
+                    <img class="botao-avancar" id="botao-proximo" onclick="mudarFoto4(1)"
+                        src="./src/assets/svg/arrow-next.svg" alt="voltar imagem">
+                    <img class="imagens" id="imagem-outros-principal" src=""
+                        alt="Fotos relacionada a criação de outros">
+                </div>
+            </article>
+        </section>
+    </main>
+
 
 </body>
 
