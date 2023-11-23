@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+
 header {
     background: #011627;
     background: no-repeat center;
@@ -72,6 +74,7 @@ input.nosubmit {
     margin: auto;
 
 }
+
 ul {
     list-style: square;
     margin-left: 20px;
@@ -217,9 +220,7 @@ ul {
 
 
 main {
-    background-image: url("../assets/img/logo-bc.png");
     background: url("../assets/svg/desconhecidos/vector 7.svg");
-    height: 2000px;
 }
 
 
@@ -257,6 +258,7 @@ main {
     border-radius: 8px;
     margin-right: 6%;
 }
+
 .moldura {
     position: absolute;
     margin-left: -60%;
@@ -281,12 +283,66 @@ main {
 }
 
 
+.sobre-nos {
+    display: inline;
+    color: white;
+    width: 40%;
+    align-self: flex-start;
+    margin-right: 10px;
+    margin-top: 10%;
+}
+
+.quadrado {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    border-radius: 10px;
+    height: 100vh;
+    width: 60%;
+    max-width: 450px;
+    max-height: 450px;
+    margin-left: 10px;
+}
+
+.quadrado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantém a proporção da imagem e cobre todo o espaço */
+}
+
+.sobre-nos p {
+    text-align: justify;
+    color: white;
+    width: 100%;
+}
+
+
 .criacao-sites-texto {
     display: inline;
     color: white;
     width: 50%;
     align-self: flex-start;
 }
+
+.criacao-sites-texto p {
+    text-align: justify;
+}
+
+.criacao-aplicativo-texto p {
+    text-align: justify;
+}
+
+.criacao-sites-texto p {
+    text-align: justify;
+}
+
+.criacao-outros-texto p {
+    text-align: justify;
+}
+
 
 
 .criacao-sites-texto h2 {
@@ -333,7 +389,6 @@ main {
     height: 400px;
     float: right;
     border-radius: 8px;
-    margin-right: 6%;
 }
 
 .botao-voltar,
@@ -347,9 +402,10 @@ main {
     cursor: pointer;
     margin-right: 30px;
     padding: 5px;
-    background-color: rgba(10,23,55,0.5);
+    background-color: rgba(10, 23, 55, 0.5);
     border-radius: 5px;
 }
+
 .botao-voltar {
     right: 90px;
     height: 20px;
@@ -362,18 +418,18 @@ main {
     width: 40px;
 }
 
-.botao-avancar:hover{
+.botao-avancar:hover {
     height: 25px;
     width: 40px;
 }
 
-.botao-voltar:hover{
+.botao-voltar:hover {
     height: 25px;
     width: 40px;
 }
 
 
-#botao-contato{
+#botao-contato {
     background: #00C9E0;
     padding: 15px;
     border: none;
@@ -381,13 +437,14 @@ main {
     text-align: center;
     color: #FFF;
     text-decoration: none;
-
 }
 
 #imagem-site-principal {
     width: 100%;
-    max-height: 400px; /* Defina uma altura máxima para as imagens */
-    transition: opacity 0.5s ease-in-out; /* Adiciona um efeito de transição suave */
+    max-height: 400px;
+    /* Defina uma altura máxima para as imagens */
+    transition: opacity 0.5s ease-in-out;
+    /* Adiciona um efeito de transição suave */
 }
 
 
@@ -406,6 +463,11 @@ main {
     font-size: 64px;
 }
 
+.sobre-nos h2 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 64px;
+}
 
 #criacao-outros-banner {
     display: flex;
@@ -433,18 +495,343 @@ main {
 
 }
 
+.section-sobre-nos_meio-site {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/img/background-medium-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem de fundo */
+}
+
+.sobre-nos_article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -250px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.sobre-nos_article::after {
+    /* Mantenha o efeito escurecedor apenas para sobre-nos_article */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 23, 55, 0.3);
+}
+
+/*
+.section-sobre-nos_meio-site::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 23, 55, 0.3);
+}
+*/
+#botao-informacoes {
+    position: absolute;
+    background: #00C9E0;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#botao-mais-comentarios {
+    position: absolute;
+    bottom: 10px;
+    /* Adiciona uma margem de 10 pixels do final da div */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00C9E0;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sobre-nos strong {
+    font-weight: 700;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.mini-rectangle {
+    width: 50px;
+    /* ajuste a largura conforme necessário */
+    height: 30px;
+    /* ajuste a altura conforme necessário */
+    margin-bottom: 10px;
+    /* espaço entre os retângulos */
+}
+
+.child-div:nth-child(1) {
+    align-self: flex-start;
+    /* Alinha a primeira div no início */
+}
+
+.child-div:nth-child(2),
+.child-div:nth-child(3) {
+    align-self: flex-end;
+    /* Alinha as duas últimas divs no final */
+}
 
 
 
 
+.comentarios-banner {
+    min-height: 100vh;
+    border-radius: 8px;
+    position: relative;
+    /* Adicionei essa propriedade para posicionar o degradê corretamente */
+}
+
+.comentarios-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: -5px;
+    height: 100%;
+    /* Ajuste conforme necessário */
+    background: linear-gradient(to bottom, rgba(1, 22, 39, 0), #011627);
+    border-radius: 0 0 8px 8px;
+    /* Garante que o degradê se misture suavemente com o fundo */
+}
+
+
+.comentarios-banner h2 {
+    color: #FFF;
+    text-align: center !important;
+    font-size: 72px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.comentarios-banner h3 {
+    color: #f0f0f0;
+    text-align: center !important;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.quadrado2 {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    min-height: 100vh;
+    width: 80%;
+    z-index: 1000;
+}
+
+.corpo-comentario {
+    padding: 50px;
+    text-align: justify !important;
+    color: #FFF;
+    position: relative;
+    /* Adicione posição relativa para que possamos posicionar elementos filhos relativamente a este elemento */
+    z-index: 1;
+    font-weight: 400;
+}
+
+.corpo-comentario h3 {
+    text-align: justify !important;
+    font-weight: 700;
+    color: #FFF;
+    position: relative;
+    /* Adicione posição relativa para que possamos posicionar elementos filhos relativamente a este elemento */
+    z-index: 1;
+}
+
+.conteudo-titulo-imagem {
+    display: flex;
+    align-items: start;
+}
+
+.conteudo-titulo-imagem img {
+    margin-right: 10px;
+    /* Ajuste o valor conforme necessário para dar espaço entre a imagem e o título */
+}
+
+.comentarios-de-baixo {
+    z-index: 0;
+}
+
+span {
+    background-color: #02223B;
+
+}
+
+span img {
+    display: inline-block;
+    /* Permite que a imagem fique ao lado do texto */
+    margin-right: 5px;
+}
+
+.comentarios-banner .corpo {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 150vh;
+    border-radius: 8px;
+    background: #011627;
+    margin: 10%;
+}
+
+main {
+    /* Outras propriedades da classe anterior */
+    position: relative; /* Garante que z-index funcione */
+    z-index: 2; /* Ajuste o valor conforme necessário para colocar acima de outros elementos */
+}
+
+.volte-sempre {
+    width: 100%;
+    position: relative; /* Mantenha como relative para criar um contexto de posicionamento para os filhos */
+    font-family: 'Comic Sans MS', cursive;
+    margin-bottom: 100px; /* ou o valor que você achar adequado */
+    z-index: 1; /* Ajuste o valor conforme necessário para colocar acima ou abaixo de outros elementos */
+}
+.volte-sempre h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.volte-sempre h3 {
+    margin-top: 10px;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 5px;
+}
 
 
 
 
+.perfil-container {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.perfil-informacoes {
+    /* Adicione estilos adicionais conforme necessário */
+    text-align: justify;
+}
 
 
+.retangle {
+    width: 2px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #011627;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left; /* Centralizar o conteúdo dentro de cada coluna */
+}
+h3 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.barra-transversal{
+    margin-left: 0px;
+}
+li a{
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column h3{
+    font-weight: 700;
+    color: #fff;
+}
+
+p.footer-text {
+    text-align: center;
+    color: #fff; /* Cor branca */
+    font-weight: bold; /* Fonte em negrito */
+    margin-top: 10px; /* Ajuste o espaçamento superior conforme necessário */
+}
 
 
+#logo-footer {
+    height: 3.125rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footer-column a {
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+.footer-column a img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    margin: 5px; /* Ajuste a margem conforme necessário */
+}
+/*
 @media screen and (max-width: 1100px) {
     #logo-blank {
         height: 1.875rem;
@@ -473,3 +860,4 @@ main {
         color: #FFF;
     }
 }
+*/

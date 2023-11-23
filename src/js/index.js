@@ -1,3 +1,6 @@
+'use strict'
+
+/*
 const search = document.getElementById("botaoSearch");
 const formSearch = document.getElementById("formSearch");
 
@@ -7,7 +10,7 @@ formSearch.addEventListener("submit", function (e) {
     e.preventDefault();
     console.log(search.value);
 
-});
+});*/
 
 
 const siteOpcao = document.getElementById("site-servicos_Li");
@@ -27,7 +30,7 @@ siteOpcao.addEventListener("click", function () {
     aplicativo.style.display = "none";
     outros.style.display = "none";
 
-    
+
     document.getElementById("criacao-sites-imagens").classList.add('animate__slideInLeft');
     document.getElementById("criacao-aplicativo-imagens").classList.remove('animate__slideInLeft');
     document.getElementById("criacao-ecommerce-imagens").classList.remove('animate__slideInLeft');
@@ -224,3 +227,14 @@ function mudarFoto4(delta) {
 }
 
 mudarFoto4(0);
+
+
+
+
+
+
+let botaoMaisInformacoes = document.getElementById("botao-informacoes");
+botaoMaisInformacoes.addEventListener("click", function () {
+
+    console.log("funcionando com sucesso")
+})
